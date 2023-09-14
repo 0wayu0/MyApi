@@ -10,6 +10,8 @@ const weaponRouter = require('./routes/weapon');
 const {mongoose } = require('mongoose');
 
 const app = express();
+const cors = require('cors');
+app.use(cors());
 
 
 mongoose.connect('mongodb+srv://naraka:missmiss@cluster0.5mn5o4j.mongodb.net/apiNaraka?retryWrites=true&w=majority',{
